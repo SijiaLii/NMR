@@ -1,0 +1,4 @@
+# ninja log v5
+1	7389	1749411599791641912	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/load_textures_cuda.o	913517a8c4e8c5e7
+1	8852	1749411601249702754	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/load_textures_cuda_kernel.o	4ff26dc3be6d88e3
+5	7487	1749411608901022236	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda.o	8b42dcb2008ccd04

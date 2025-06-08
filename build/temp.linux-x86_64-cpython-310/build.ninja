@@ -3,9 +3,9 @@ cxx = c++
 nvcc = /usr/local/cuda/bin/nvcc
 
 cflags = -pthread -B /home/cmumbl/Software/anaconda3/envs/hmr/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/cmumbl/Software/anaconda3/envs/hmr/include -fPIC -O2 -isystem /home/cmumbl/Software/anaconda3/envs/hmr/include -fPIC -I/home/cmumbl/Software/anaconda3/envs/hmr/lib/python3.10/site-packages/torch/include -I/home/cmumbl/Software/anaconda3/envs/hmr/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/home/cmumbl/Software/anaconda3/envs/hmr/include/python3.10 -c
-post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=rasterize -std=c++17
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=create_texture_image -std=c++17
 cuda_cflags = -I/home/cmumbl/Software/anaconda3/envs/hmr/lib/python3.10/site-packages/torch/include -I/home/cmumbl/Software/anaconda3/envs/hmr/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/home/cmumbl/Software/anaconda3/envs/hmr/include/python3.10 -c
-cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=rasterize -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 -std=c++17
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=create_texture_image -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 -std=c++17
 cuda_dlink_post_cflags = 
 sycl_dlink_post_cflags = 
 ldflags = 
@@ -26,8 +26,8 @@ rule cuda_compile
 
 
 
-build /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda.o: compile /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/neural_renderer/cuda/rasterize_cuda.cpp
-build /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda_kernel.o: cuda_compile /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/neural_renderer/cuda/rasterize_cuda_kernel.cu
+build /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/create_texture_image_cuda.o: compile /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/neural_renderer/cuda/create_texture_image_cuda.cpp
+build /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/create_texture_image_cuda_kernel.o: cuda_compile /home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/neural_renderer/cuda/create_texture_image_cuda_kernel.cu
 
 
 

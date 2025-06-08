@@ -2,3 +2,7 @@
 1	7389	1749411599791641912	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/load_textures_cuda.o	913517a8c4e8c5e7
 1	8852	1749411601249702754	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/load_textures_cuda_kernel.o	4ff26dc3be6d88e3
 5	7487	1749411608901022236	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda.o	8b42dcb2008ccd04
+8	7261	1749411873594256713	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda.o	8b42dcb2008ccd04
+11	8707	1749412343507758676	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/rasterize_cuda_kernel.o	833481832746d8c5
+4	7312	1749412350987088483	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/create_texture_image_cuda.o	e1c403cfd4292da8
+5	8422	1749412352092137218	/home/cmumbl/Code/hmr_benchmark/third-party/TokenHMR/third-party/NMR/build/temp.linux-x86_64-cpython-310/neural_renderer/cuda/create_texture_image_cuda_kernel.o	f6465d17eed2eaf6
